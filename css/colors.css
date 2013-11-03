@@ -1,0 +1,103 @@
+/* GREEN */
+body.green {
+  background-color: rgb(16, 216, 160);
+}
+
+.panel-heading.green {
+  background-color: #0F7F48;
+}
+
+.panel-body.green {
+  background-color: #74FFBA;
+}
+
+/* LIGHT BLUE */
+body.light-blue {
+  background-color: rgb(200, 232, 230);
+}
+
+.panel-heading.light-blue {
+  background-color: #3A91AA;
+}
+
+.panel-body.light-blue {
+  background-color: rgb(240, 255, 255);
+}
+
+/* DARK BLUE */
+body.dark-blue {
+  background-color: rgb(78, 101, 150);
+}
+
+.panel-heading.dark-blue {
+  background-color: #0E1852;
+}
+
+.panel-body.dark-blue {
+  background-color: #1D31A6;
+}
+
+/* PURPLE */
+body.purple {
+  background-color: #7A36D6;
+}
+
+.panel-heading.purple {
+  background-color: #461D7D;
+}
+
+.panel-body.purple {
+  background-color: #A25EFE;
+}
+
+/* PINK */
+body.pink {
+  background-color: rgb(240, 124, 159);
+}
+
+.panel-heading.pink {
+  background-color: rgb(225, 73, 109);
+}
+
+.panel-body.pink {
+  background-color: #FF92CA;
+}
+
+/* RED */
+body.red {
+  background-color: rgb(203, 29, 63);
+}
+
+.panel-heading.red {
+  background-color: #A51430;
+}
+
+.panel-body.red {
+  background-color: #FD4F5F;
+}
+
+/* ORANGE */
+body.orange {
+  background-color: rgb(240, 150, 112);
+}
+
+.panel-heading.orange {
+  background-color: #CC5B00;
+}
+
+.panel-body.orange {
+  background-color: #FFA163;
+}
+
+/* YELLOW */
+body.yellow {
+  background-color: rgb(255, 231, 132);
+}
+
+.panel-heading.yellow {
+  background-color: #FFD12A;
+}
+
+.panel-body.yellow {
+  background-color: #FFFF9B;
+}
