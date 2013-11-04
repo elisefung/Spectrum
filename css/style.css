@@ -1,6 +1,5 @@
 body {
-/*  background-color: #e7e7e7;*/
-  background-color: #6CD0B9; 
+  background-color: #e7e7e7;
   height: 100%;
   color: #000;
 }
@@ -28,10 +27,11 @@ footer a:hover {
   border: none;
   background: none;
   margin-bottom: 80px;
+  padding-top: 10px;
 }
 
 .navbar .navbar-brand {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   position: relative;
   display: inline;
@@ -58,19 +58,19 @@ footer a:hover {
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a{
-    color: #efefef;
+    color: rgb(41, 78, 150);
 }
 
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>li>a:hover {
-  color: #cdcdcd;
+  color: rgb(20, 61, 150);
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover, 
 .navbar-default .navbar-nav>.open>a:focus {
   background-color: transparent;
-  color: #efefef;
+  color: rgb(20, 61, 150);
 }
 
 .navbar-nav>li>.dropdown-menu {
