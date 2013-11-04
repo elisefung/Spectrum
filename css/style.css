@@ -160,3 +160,74 @@ header #mood-change {
 .panel .panel-heading .panel-descrip {
   margin-bottom: 0px;
 }
+
+/* mood change popover */
+
+.popover {
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.popover-title {
+  background-color: #fff;
+  border: none;
+  padding-top: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 0px;
+}
+
+.popover-content {
+  width: 150px;
+}
+
+.popover-content button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  opacity: 0.8;
+}
+
+.popover-content button:hover {
+  opacity: 1;
+}
+
+.popover-content button:focus {
+  outline: none;
+}
+
+#mc-green {
+  background-color: rgb(16, 216, 160);
+}
+
+#mc-lightblue {
+  background-color: rgb(137, 206, 224);
+}
+
+#mc-darkblue {
+  background-color: rgb(41, 78, 150);
+}
+
+#mc-purple {
+  background-color: rgb(130, 91, 193);
+}
+
+#mc-pink {
+  background-color: rgb(240, 124, 159);
+}
+
+#mc-red {
+  background-color: rgb(203, 29, 63);
+}
+
+#mc-orange {
+  background-color: rgb(247, 113, 67);
+}
+
+#mc-yellow {
+  background-color: rgb(249, 220, 95);
+}
