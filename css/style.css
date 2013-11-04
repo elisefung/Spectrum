@@ -2,38 +2,104 @@ body {
 /*  background-color: #e7e7e7;*/
   background-color: #6CD0B9; 
   height: 100%;
+  color: #000;
 }
 
-.main a, footer a {
-  color: #333333;
-  opacity: 1;
+footer {
+  color: #666666;
 }
 
-.main a:hover, footer a:hover {
+footer a {
+  color: #666666;
+}
+
+footer a:hover {
   color: #333333;
   text-decoration: none;
-  opacity: .65;
+}
+
+.main a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
   border-radius: 0px;
   border: none;
-/*  background-color: rgba(255, 255, 255); /* Fallback */
-/*  background-color: rgba(255, 255, 255, .5);*/
   background: none;
   margin-bottom: 80px;
 }
 
-b.caret {
-      color: #efefef;
+.navbar .navbar-brand {
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline;
+  color: rgba(0, 0, 255, 0.5);
+
 }
 
+.navbar-brand:after {
+  content: "spectrum";
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.navbar-default .navbar-brand:hover {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+/* dropdown */
+.navbar-default .navbar-collapse{
+  border: none;
+}
+
+.navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a{
     color: #efefef;
 }
 
+.navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>li>a:hover {
   color: #cdcdcd;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover, 
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: transparent;
+  color: #efefef;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  min-width: 130px;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.dropdown-menu>li>a:hover, 
+.dropdown-menu>li>a:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+/* toggle button */
+.navbar-default .navbar-toggle {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 footer {
@@ -43,4 +109,42 @@ footer {
   background-color: rgba(255, 255, 255); 
   background-color: rgba(255, 255, 255, .15);
   margin-top: 120px;
+}
+
+/*-------- RESULTS PAGE --------*/
+
+header .title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+header .mood-change {
+  padding-top: 12px;
+}
+
+.panel{
+  border: none;
+}
+
+.panel-group .panel {
+  border-radius: 0px;
+}
+
+.panel-heading {
+  border-radius: 0px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.panel .panel-heading .panel-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.panel .panel-heading .panel-descrip {
+  margin-bottom: 0px;
 }
