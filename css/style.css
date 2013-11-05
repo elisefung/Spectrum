@@ -4,17 +4,11 @@ body {
   color: #000;
 }
 
-footer {
-  color: #666666;
-}
-
-footer a {
-  color: #666666;
-}
-
-footer a:hover {
-  color: #333333;
-  text-decoration: none;
+/* container 1200px media query */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
 }
 
 .main a {
@@ -26,7 +20,7 @@ footer a:hover {
   border-radius: 0px;
   border: none;
   background: none;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   padding-top: 10px;
 }
 
@@ -36,7 +30,6 @@ footer a:hover {
   position: relative;
   display: inline;
   color: rgba(0, 0, 255, 0.5);
-
 }
 
 .navbar-brand:after {
@@ -58,7 +51,7 @@ footer a:hover {
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>li>a{
-    color: rgb(41, 78, 150);
+  color: rgb(41, 78, 150);
 }
 
 .navbar-default .navbar-nav>.open>a:hover,
@@ -102,6 +95,20 @@ footer a:hover {
   outline: none;
 }
 
+/* footer */
+footer {
+  color: #666666;
+}
+
+footer a {
+  color: #666666;
+}
+
+footer a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
 footer {
   bottom: 0px;
   padding: 8px 0px; 
@@ -109,6 +116,32 @@ footer {
   background-color: rgba(255, 255, 255); 
   background-color: rgba(255, 255, 255, .15);
   margin-top: 120px;
+}
+
+/*-------- INDEX --------*/
+.question {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activity-btn {
+  font-size: 17px;
+  margin: 20px;
+}
+
+.color-btn {
+  width: 125px;
+  height: 125px;
+  border-radius: 0px;
+  margin: 20px;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-indicators {
+  bottom: -100px;
 }
 
 /*-------- RESULTS PAGE --------*/
