@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="lightblue">
+  <body class="green">
       <nav class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -54,7 +54,7 @@
             <h2 class="title">for studying</h2>
           </div>
           <div class="col-xs-3">
-            <a href="#" class="mood-change pull-right"><i class="fa fa-frown-o fa-lg">&nbsp; </i>Not Feelin' It?</a>
+            <a href="#" id="mood-change" class="mood-change pull-right" rel="popover" data-toggle="popover" title="choose another color..." data-content='<button id="mc-green" class="btn btn-default"></button><button id="mc-lightblue" class="btn btn-default"></button><button id="mc-darkblue" class="btn btn-default"></button><button id="mc-purple" class="btn btn-default"></button><button id="mc-pink" class="btn btn-default"></button><button id="mc-red" class="btn btn-default"></button><button id="mc-orange" class="btn btn-default"></button><button id="mc-yellow" class="btn btn-default"></button>'><i class="fa fa-frown-o fa-lg">&nbsp; </i>Not Feelin' It?</a>
           </div>
         </header>
         <div class="panel-group" id="accordion">
@@ -204,5 +204,14 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#mood-change").popover({
+          placement: 'bottom',
+          html: true
+        });
+      });
+    </script>
   </body>
 </html>
