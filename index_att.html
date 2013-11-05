@@ -51,30 +51,31 @@
       <div class="container main">
         <div id="carousel-spectrum" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
           <!-- Indicators -->
-          <!-- <ol class="carousel-indicators">
+          <ol class="carousel-indicators">
             <li data-target="#carousel-spectrum" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-spectrum" data-slide-to="1"></li>
-            <li data-target="#carousel-spectrum" data-slide-to="2"></li>
-          </ol> -->
+          </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <!-- Page 1 -->
             <div id="q1" class="item active col-md-12">
               <h2 class="question">What's up?</h2>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">studying</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">sleepy</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">psyched!</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">bored</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">hanging out</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">nostalgic</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">stressed out</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">sexy</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">going out</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">kinda lonely</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">procrastinating</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">feeling good!</button></a>
-              <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">working out</button></a>
+                <div id="activity-btn-wrap">
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">studying</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">sleepy</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">psyched!</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">bored</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">hanging out</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">nostalgic</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">stressed out</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">sexy</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">going out</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">kinda lonely</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">procrastinating</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">feeling good!</button></a>
+                <a href="#carousel-spectrum" data-slide="next"><button type="button" class="btn btn-default activity-btn">working out</button></a>
+                </div>
           </div>
           
           <!-- Page 2 -->
@@ -275,5 +276,14 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#mood-change").popover({
+          placement: 'bottom',
+          html: true
+        });
+      });
+    </script>
   </body>
 </html>
