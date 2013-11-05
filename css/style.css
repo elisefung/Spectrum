@@ -160,7 +160,7 @@ footer {
 
 .carousel-inner {
   text-align: center;
-  min-height: 400px;
+  min-height: 480px;
 }
 
 .carousel-inner #results {
@@ -201,10 +201,6 @@ header #mood-change {
 
 .panel{
   border: none;
-}
-
-.panel-group {
-  margin-bottom: 40px;
 }
 
 .panel-group .panel {
