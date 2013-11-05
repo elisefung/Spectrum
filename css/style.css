@@ -5,7 +5,7 @@ body {
 }
 
 /* container 1200px media query */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
     width: 940px;
   }
@@ -137,20 +137,30 @@ footer {
   margin: 0 auto;
 }
 
-.activity-btn {
+.activity-btn button {
   font-size: 17px;
   margin: 20px;
 }
 
 .color-btn {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 280px;
   border-radius: 0px;
-  margin: 12px;
+  opacity: .9;
+  border: none;
+}
+
+.color-btn:hover {
+  opacity: 1;
+}
+
+#q2 .col-md-1, #q2 .row {
+  padding: 0px !important;
 }
 
 .carousel-inner {
   text-align: center;
+  min-height: 400px;
 }
 
 .carousel-inner #results {
@@ -158,11 +168,23 @@ footer {
 }
 
 .carousel-indicators {
-  bottom: -100px;
+  bottom: -40px;
 }
 
 #q1, #q2 {
-  height: 420px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: @screen-sm-max) {
+  #q1, #q2 {
+    height: auto;
+  }
+  .color-btn {
+    height: 100px;
+  }
+  .activity-btn button {
+    width: 100%;
+  }
 }
 
 /*-------- RESULTS --------*/
@@ -179,6 +201,10 @@ header #mood-change {
 
 .panel{
   border: none;
+}
+
+.panel-group {
+  margin-bottom: 40px;
 }
 
 .panel-group .panel {
