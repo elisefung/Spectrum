@@ -62,19 +62,19 @@
             <div id="q1" class="item active col-md-12">
               <h2 class="question">What's up?</h2>
                 <div id="activity-btn-wrap">
-                <a href="#carousel-spectrum" data-slide="next" data-activity="studying"><button type="button" class="btn btn-default activity-btn">studying</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="sleepy"><button type="button" class="btn btn-default activity-btn">sleepy</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="psyched"><button type="button" class="btn btn-default activity-btn">psyched!</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="bored"><button type="button" class="btn btn-default activity-btn">bored</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="hangingOut"><button type="button" class="btn btn-default activity-btn">hanging out</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="nostalgic"><button type="button" class="btn btn-default activity-btn">nostalgic</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="stressedOut"><button type="button" class="btn btn-default activity-btn">stressed out</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="sexy"><button type="button" class="btn btn-default activity-btn">sexy</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="goingOut"><button type="button" class="btn btn-default activity-btn">going out</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="kindaLonely"><button type="button" class="btn btn-default activity-btn">kinda lonely</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="procrastinating"><button type="button" class="btn btn-default activity-btn">procrastinating</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="feelingGood"><button type="button" class="btn btn-default activity-btn">feeling good!</button></a>
-                <a href="#carousel-spectrum" data-slide="next" data-activity="workingOut"><button type="button" class="btn btn-default activity-btn">working out</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="studying"><button type="button" class="btn btn-default">studying</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="sleepy"><button type="button" class="btn btn-default">sleepy</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="psyched"><button type="button" class="btn btn-default">psyched!</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="bored"><button type="button" class="btn btn-default">bored</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="hangingOut"><button type="button" class="btn btn-default">hanging out</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="nostalgic"><button type="button" class="btn btn-default">nostalgic</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="stressedOut"><button type="button" class="btn btn-default">stressed out</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="sexy"><button type="button" class="btn btn-default">sexy</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="goingOut"><button type="button" class="btn btn-default">going out</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="kindaLonely"><button type="button" class="btn btn-default">kinda lonely</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="procrastinating"><button type="button" class="btn btn-default">procrastinating</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="feelingGood"><button type="button" class="btn btn-default">feeling good!</button></a>
+                <a class="activity-btn" href="#carousel-spectrum" data-slide="next" data-activity="workingOut"><button type="button" class="btn btn-default">working out</button></a>
                 </div>
           </div>
           
@@ -83,8 +83,8 @@
             <h2 class="question">Pick a color</h2>
               <div class="row">
               <a class="col-md-offset-2 col-md-1" href="#carousel-spectrum" data-slide="next" data-color="green"><button type="button" class="btn btn-default color-btn green"></button></a>
-              <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button"class="btn btn-default color-btn light-blue"></button></a>
-              <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="darkblue"><button type="button" class="btn btn-default color-btn dark-blue"></button></a>
+              <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button"class="btn btn-default color-btn lightblue"></button></a>
+              <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="darkblue"><button type="button" class="btn btn-default color-btn darkblue"></button></a>
               <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="purple"><button type="button" class="btn btn-default color-btn purple"></button></a>
               <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="pink"><button type="button" class="btn btn-default color-btn pink"></button></a>
               <a class="col-md-1" href="#carousel-spectrum" data-slide="next" data-color="red"><button type="button" class="btn btn-default color-btn red"></button></a>
@@ -280,16 +280,37 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      $(function() {
-        $("#mood-change").popover({
-          placement: 'bottom',
-          html: true
-        });
+    $(document).ready(function(){
+        $('#mood-change').popover({
+        placement: 'bottom',
+        html: true
       });
+    });
 
-      // $(function() {
-      //   $('')
-      // })
+    $(document).ready(function(){
+      $('.activity-btn').on('click', function() {
+        var user_activity = $(this).attr('data-activity');
+        var user_activity_print = null;
+          switch(user_activity) {
+            case 'studying': user_activity_print = "studying"; break;
+            case 'sleepy': user_activity_print = "feeling sleepy"; break;
+            case 'psyched': user_activity_print = "being psyched!"; break;
+            case 'bored': user_activity_print = "being bored"; break;
+            case 'hangingOut': user_activity_print = "hanging out"; break;
+            case 'nostalgic': user_activity_print = "feeling nostalgic"; break;
+            case 'stressedOut': user_activity_print = "stressing out"; break;
+            case 'sexy': user_activity_print = "sexy time"; break;
+            case 'goingOut': user_activity_print = "going out"; break;
+            case 'kindaLonely': user_activity_print = "feeling kinda lonely"; break;
+            case 'procrastinating': user_activity_print = "procrastinating"; break;
+            case 'feelingGood': user_activity_print = "feeling good!"; break;
+            case 'workingOut': user_activity_print = "working out"; break;
+            default: user_activity_print = "nothing";
+          };
+
+        $('#results-title').html("for " + user_activity_print);
+      });
+    });
     </script>
 
   </body>
