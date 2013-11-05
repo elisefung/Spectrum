@@ -11,6 +11,10 @@ body.green {
   background-color: rgb(134, 219, 192);
 }
 
+.color-btn.green {
+  background-color: rgb(16, 216, 160);
+}
+
 /* LIGHT BLUE */
 body.lightblue {
   background-color: rgb(137, 206, 224);
@@ -24,6 +28,11 @@ body.lightblue {
   background-color: rgb(170, 216, 229);
 }
 
+.color-btn.light-blue {
+  background-color: rgb(100, 189, 232);
+}
+
+
 /* DARK BLUE */
 body.darkblue {
   background-color: rgb(41, 78, 150);
@@ -35,6 +44,10 @@ body.darkblue {
 
 .darkblue .panel-body {
   background-color: rgb(62, 92, 150);
+}
+
+.color-btn.dark-blue {
+  background-color: rgb(41, 78, 150);
 }
 
 /* PURPLE */
@@ -50,6 +63,10 @@ body.purple {
   background-color: rgb(194, 172, 229);
 }
 
+.color-btn.purple {
+  background-color: rgb(130, 91, 193);
+}
+
 /* PINK */
 body.pink {
   background-color: rgb(240, 124, 159);
@@ -61,6 +78,10 @@ body.pink {
 
 .pink .panel-body {
   background-color: rgb(237, 174, 195);
+}
+
+.color-btn.pink {
+  background-color: rgb(240, 124, 159);
 }
 
 /* RED */
@@ -76,6 +97,10 @@ body.red {
   background-color: rgb(204, 133, 150);
 }
 
+.color-btn.red {
+  background-color: rgb(203, 29, 63);
+}
+
 /* ORANGE */
 body.orange {
   background-color: rgb(247, 113, 67);
@@ -89,6 +114,10 @@ body.orange {
   background-color: rgb(247, 176, 151);
 }
 
+.color-btn.orange {
+  background-color: rgb(247, 113, 67);
+}
+
 /* YELLOW */
 body.yellow {
   background-color: rgb(249, 220, 95);
@@ -100,4 +129,8 @@ body.yellow {
 
 .yellow .panel-body{
   background-color: rgb(244, 228, 162);
+}
+
+.color-btn.yellow {
+  background-color: rgb(249, 220, 95);
 }
