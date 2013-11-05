@@ -97,7 +97,7 @@
           <div id="results" class="item col-md-12">
             <header class="row">
               <div class="col-xs-9">
-                <h2 id="results-title">for</h2>
+                <h2 id="results-title"></h2>
               </div>
               <div class="col-xs-3">
                 <a href="#" id="mood-change" class="mood-change pull-right" rel="popover" data-toggle="popover" title="choose another color..." data-content='<button id="mc-green" class="btn btn-default"></button><button id="mc-lightblue" class="btn btn-default"></button><button id="mc-darkblue" class="btn btn-default"></button><button id="mc-purple" class="btn btn-default"></button><button id="mc-pink" class="btn btn-default"></button><button id="mc-red" class="btn btn-default"></button><button id="mc-orange" class="btn btn-default"></button><button id="mc-yellow" class="btn btn-default"></button>'><i class="fa fa-frown-o fa-lg">&nbsp; </i>Not Feelin' It?</a>
@@ -289,29 +289,32 @@
 
     $(document).ready(function(){
       $('.activity-btn').on('click', function() {
-        var user_activity = $(this).attr('data-activity');
-        var user_activity_print = null;
-          switch(user_activity) {
-            case 'studying': user_activity_print = "studying"; break;
-            case 'sleepy': user_activity_print = "feeling sleepy"; break;
-            case 'psyched': user_activity_print = "being psyched!"; break;
-            case 'bored': user_activity_print = "being bored"; break;
-            case 'hangingOut': user_activity_print = "hanging out"; break;
-            case 'nostalgic': user_activity_print = "feeling nostalgic"; break;
-            case 'stressedOut': user_activity_print = "stressing out"; break;
-            case 'sexy': user_activity_print = "sexy time"; break;
-            case 'goingOut': user_activity_print = "going out"; break;
-            case 'kindaLonely': user_activity_print = "feeling kinda lonely"; break;
-            case 'procrastinating': user_activity_print = "procrastinating"; break;
-            case 'feelingGood': user_activity_print = "feeling good!"; break;
-            case 'workingOut': user_activity_print = "working out"; break;
-            default: user_activity_print = "nothing";
+        var userActivity = $(this).attr('data-activity');
+        var userActivityPrint = null;
+          switch(userActivity) {
+            case 'studying': userActivityPrint = "studying"; break;
+            case 'sleepy': userActivityPrint = "feeling sleepy"; break;
+            case 'psyched': userActivityPrint = "being psyched!"; break;
+            case 'bored': userActivityPrint = "being bored"; break;
+            case 'hangingOut': userActivityPrint = "hanging out"; break;
+            case 'nostalgic': userActivityPrint = "feeling nostalgic"; break;
+            case 'stressedOut': userActivityPrint = "stressing out"; break;
+            case 'sexy': userActivityPrint = "sexy time"; break;
+            case 'goingOut': userActivityPrint = "going out"; break;
+            case 'kindaLonely': userActivityPrint = "feeling kinda lonely"; break;
+            case 'procrastinating': userActivityPrint = "procrastinating"; break;
+            case 'feelingGood': userActivityPrint = "feeling good!"; break;
+            case 'workingOut': userActivityPrint = "working out"; break;
+            default: userActivityPrint = "nothing";
           };
 
-        $('#results-title').html("for " + user_activity_print);
+        $('#results-title').html("for " + userActivityPrint);
       });
       
-      $('.')
+      $('.color-btn').on('click', function() {
+        var userColor = $(this).attr('data-color');
+        $('body').addClass(userColor);
+      });
     });
     </script>
 
