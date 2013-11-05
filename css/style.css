@@ -7,7 +7,7 @@ body {
 /* container 1200px media query */
 @media screen and (max-width: 992px) {
   .container {
-    width: 760px;
+    width: 940px;
   }
 }
 
@@ -149,8 +149,16 @@ footer {
   text-align: center;
 }
 
+.carousel-inner #results {
+  text-align: left;
+}
+
 .carousel-indicators {
   bottom: -100px;
+}
+
+#q1, #q2 {
+  height: 420px;
 }
 
 /*-------- RESULTS --------*/
@@ -163,17 +171,6 @@ header .title {
 header #mood-change {
   padding-top: 12px;
   outline: none;
-}
-
-.dropdown-menu.mood-change {
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  width: 200px;
-  height: 120px;
 }
 
 .panel{
@@ -201,7 +198,6 @@ header #mood-change {
 
 .panel .panel-heading .panel-descrip {
   margin-bottom: 0px;
-<<<<<<< HEAD
 }
 
 /* mood change popover */
@@ -223,12 +219,12 @@ header #mood-change {
 }
 
 .popover-content {
-  width: 150px;
+  width: 280px;
 }
 
 .popover-content button {
   width: 30px;
-  height: 30px;
+  height: 40px;
   outline: none;
   border: none;
   border-radius: 0px;

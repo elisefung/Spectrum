@@ -3,6 +3,11 @@ body.green {
   background-color: rgb(16, 216, 160);
 }
 
+/*body.green #q1,
+body.green #q2 {
+  background-color: #e7e7e7;
+}*/
+
 .green .panel-heading {
   background-color: rgb(19, 170, 123);
 }
