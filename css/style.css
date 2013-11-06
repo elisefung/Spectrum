@@ -12,6 +12,10 @@ body {
 }
 
 .main a {
+  color: inherit;
+}
+
+.navbar a, a#mood-change {
   text-decoration: none;
   color: inherit;
 }
@@ -215,6 +219,10 @@ footer {
 
 /*-------- RESULTS --------*/
 
+#results .row {
+  margin-right: 0px;
+}
+
 header #results-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -260,8 +268,9 @@ header #mood-change {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: rgb(255, 255, 255);
-  max-width: 206px;
+  max-width: 210px;
   padding-bottom: 4px;
+  margin-right: 40px;
 }
 
 .popover-title {
