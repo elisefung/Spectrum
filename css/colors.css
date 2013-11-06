@@ -16,7 +16,11 @@ body.green #q2 {
   background-color: rgb(134, 219, 192);
 }
 
-.color-btn.green {
+.color-btn button.green {
+  background-color: rgb(16, 216, 160);
+}
+
+#mc-green {
   background-color: rgb(16, 216, 160);
 }
 
@@ -33,10 +37,13 @@ body.lightblue {
   background-color: rgb(170, 216, 229);
 }
 
-.color-btn.lightblue {
+.color-btn button.lightblue {
   background-color: rgb(100, 189, 232);
 }
 
+#mc-lightblue {
+  background-color: rgb(137, 206, 224);
+}
 
 /* DARK BLUE */
 body.darkblue {
@@ -51,7 +58,11 @@ body.darkblue {
   background-color: rgb(62, 92, 150);
 }
 
-.color-btn.darkblue {
+.color-btn button.darkblue {
+  background-color: rgb(41, 78, 150);
+}
+
+#mc-darkblue {
   background-color: rgb(41, 78, 150);
 }
 
@@ -68,7 +79,11 @@ body.purple {
   background-color: rgb(194, 172, 229);
 }
 
-.color-btn.purple {
+.color-btn button.purple {
+  background-color: rgb(130, 91, 193);
+}
+
+#mc-purple {
   background-color: rgb(130, 91, 193);
 }
 
@@ -85,7 +100,11 @@ body.pink {
   background-color: rgb(237, 174, 195);
 }
 
-.color-btn.pink {
+.color-btn button.pink {
+  background-color: rgb(240, 124, 159);
+}
+
+#mc-pink {
   background-color: rgb(240, 124, 159);
 }
 
@@ -102,7 +121,11 @@ body.red {
   background-color: rgb(204, 133, 150);
 }
 
-.color-btn.red {
+.color-btn button.red {
+  background-color: rgb(203, 29, 63);
+}
+
+#mc-red {
   background-color: rgb(203, 29, 63);
 }
 
@@ -119,7 +142,11 @@ body.orange {
   background-color: rgb(247, 176, 151);
 }
 
-.color-btn.orange {
+.color-btn button.orange {
+  background-color: rgb(247, 113, 67);
+}
+
+#mc-orange {
   background-color: rgb(247, 113, 67);
 }
 
@@ -136,6 +163,10 @@ body.yellow {
   background-color: rgb(244, 228, 162);
 }
 
-.color-btn.yellow {
+.color-btn button.yellow {
+  background-color: rgb(249, 220, 95);
+}
+
+#mc-yellow {
   background-color: rgb(249, 220, 95);
 }
