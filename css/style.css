@@ -260,6 +260,25 @@ header #mood-change {
   margin-bottom: 0px;
 }
 
+.panel a.rec-nav {
+  padding-top: 20px;
+}
+
+.panel #collapseDrink ul {
+  list-style: circle;
+}
+
+.panel button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.panel button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 /* mood change popover */ 
 
 .popover {
