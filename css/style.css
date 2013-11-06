@@ -150,6 +150,10 @@ footer {
   border: none;
 }
 
+.activity-btn:focus, .color-btn:focus {
+  
+}
+
 .color-btn:hover {
   opacity: 1;
 }
@@ -181,9 +185,6 @@ footer {
   }
   .color-btn {
     height: 100px;
-  }
-  .activity-btn button {
-    width: 100%;
   }
 }
 
