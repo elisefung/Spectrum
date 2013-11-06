@@ -79,11 +79,11 @@
           </div>
           
           <!-- Page 2 -->
-          <div id="q2" class="item col-md-12">
+          <div id="q2" class="item">
             <h2 class="question">Pick a color</h2>
               <div class="row">
               <a class="color-btn col-md-offset-2 col-md-1" href="#carousel-spectrum" data-slide="next" data-color="green"><button type="button" class="btn btn-default green"></button></a>
-              <a class="color-btn col-md-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button"class="btn btn-default lightblue"></button></a>
+              <a class="color-btn col-md-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button" class="btn btn-default lightblue"></button></a>
               <a class="color-btn col-md-1" href="#carousel-spectrum" data-slide="next" data-color="darkblue"><button type="button" class="btn btn-default darkblue"></button></a>
               <a class="color-btn col-md-1" href="#carousel-spectrum" data-slide="next" data-color="purple"><button type="button" class="btn btn-default purple"></button></a>
               <a class="color-btn col-md-1" href="#carousel-spectrum" data-slide="next" data-color="pink"><button type="button" class="btn btn-default pink"></button></a>
@@ -100,7 +100,17 @@
                 <h2 id="results-title"></h2>
               </div>
               <div class="col-xs-3">
-                <a href="#" id="mood-change" class="mood-change pull-right" rel="popover" data-toggle="popover" title="choose another color..." data-content='<button id="mc-green" class="btn btn-default"></button><button id="mc-lightblue" class="btn btn-default"></button><button id="mc-darkblue" class="btn btn-default"></button><button id="mc-purple" class="btn btn-default"></button><button id="mc-pink" class="btn btn-default"></button><button id="mc-red" class="btn btn-default"></button><button id="mc-orange" class="btn btn-default"></button><button id="mc-yellow" class="btn btn-default"></button>'><i class="fa fa-frown-o fa-lg">&nbsp; </i>Not Feelin' It?</a>
+                <a href="#" id="mood-change" class="mood-change pull-right" rel="popover" data-toggle="popover" title="choose another color" data-content=
+                  '<a class="color-change" data-color="green"><button type="button" id="mc-green" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="lightblue"><button type="button" id="mc-lightblue" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="darkblue"><button type="button" id="mc-darkblue" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="purple"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="pink"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="red"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="orange"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
+                   <a class="color-change" data-color="yellow"><button type="button" id="mc-yellow" class="btn btn-default"></button></a>'>
+                   <i class="fa fa-frown-o fa-lg">&nbsp; </i>Not Feelin' It?
+                 </a>
               </div>
             </header>
 
@@ -269,8 +279,10 @@
       <footer>
         <div class="container">
           Spectrum / Human Computer Interaction 
-          <div class="pull-right"><a href="elisefung.com" target="_blank">Elise Fung</a> &amp; 
-          <a href="stephalee.com" target="_blank">Stephanie Lee</a>
+          <div class="pull-right">
+            <a href="elisefung.com" target="_blank">Elise Fung</a> &amp; 
+            <a href="stephalee.com" target="_blank">Stephanie Lee</a>
+          </div>
         </div>
       </footer>
 
@@ -287,7 +299,7 @@
       });
     });
 
-    $(document).ready(function(){
+    $(document).ready(function(){      
       $('.activity-btn').on('click', function() {
         var userActivity = $(this).attr('data-activity');
         var userActivityPrint = null;
@@ -314,6 +326,49 @@
       $('.color-btn').on('click', function() {
         var userColor = $(this).attr('data-color');
         $('body').addClass(userColor);
+        $('.carousel-indicators').hide();
+      });
+      /* Y U NO WORK */
+      $('.color-change').on('click', function() {
+        var bodyColor = $('body').attr('class');
+        $('body').removeClass(bodyColor);
+        var changeColor = $(this).attr('data-color');
+        $('body').addClass(changeColor);
+      });
+      
+      /* dropdown/popover hovers */
+      // $('.dropdown-menu').hide();
+      // $('.popover').hide();
+      // 
+      // $('.dropdown-toggle').hover(function() {
+      //   $('.dropdown-menu').show();
+      // )});
+      // $('#moodchange').hover(function() {
+      //   $('.popover').show();
+      // }});
+      // 
+      $(window).resize(function() {
+      	var width = $(window).width();
+      	if (width < 460) {
+      		$('.activity-btn .btn').removeClass('btn-default');
+          $('.activity-btn .btn').addClass('btn-block');
+          $('.activity-btn .btn').css({'margin-left':'0px'});
+      	}
+      });
+      $(window).resize(function() {
+      	var width = $(window).width();
+      	if (width > 460) {
+    		  $('.activity-btn .btn').removeClass('btn-block');
+          $('.activity-btn .btn').addClass('btn-default');
+    	  }
+      });
+      $(document).ready(function(){
+      	var width = $(window).width();
+      	if (width < 460) {
+      		$('.activity-btn .btn').removeClass('btn-default');
+          $('.activity-btn .btn').addClass('btn-block');
+          $('.activity-btn .btn').css({'margin-left':'0px'});
+      	}
       });
     });
     </script>

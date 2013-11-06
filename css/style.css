@@ -128,17 +128,27 @@ footer {
 /*-------- INDEX --------*/
 .question {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #activity-btn-wrap {
-  width: 800px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
 .activity-btn button {
-  font-size: 17px;
-  margin: 20px;
+  font-size: 18px;
+  margin: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  background-color: #cccccc;
+  color: rgb(62, 62, 62);
+}
+
+.activity-btn button:hover {
+  border: 2px solid #ffffff;
+  background-color: rgb(184, 184, 184);
+  color: #333333;
 }
 
 .color-btn button {
@@ -149,12 +159,13 @@ footer {
   border: none;
 }
 
-.activity-btn:focus, .color-btn:focus {
-  
+.color-btn button:hover {
+  opacity: 1;
 }
 
-.color-btn:hover {
-  opacity: 1;
+.activity-btn button:focus, .color-btn button:focus {
+  outline: none !important; 
+  box-shadow: none !important;
 }
 
 #q2 .col-md-1, #q2 .row {
@@ -178,12 +189,27 @@ footer {
   margin-bottom: 40px;
 }
 
+#q2 {
+  width: 120%;
+  margin-left: -10%;
+}
+
 @media screen and (min-width: @screen-sm-max) {
   #q1, #q2 {
     height: auto;
   }
-  .color-btn {
+  /* not working currently */
+  .color-btn button {
     height: 100px;
+  }
+  #activity-btn-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: @screen-xs-max){
+  .activity-btn button {
+    width: 400px !important;
   }
 }
 
@@ -234,6 +260,8 @@ header #mood-change {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: rgb(255, 255, 255);
+  max-width: 206px;
+  padding-bottom: 4px;
 }
 
 .popover-title {
@@ -250,12 +278,14 @@ header #mood-change {
 }
 
 .popover-content button {
-  width: 30px;
+  width: 18px;
   height: 40px;
   outline: none;
   border: none;
   border-radius: 0px;
   opacity: 0.8;
+  padding: 0px;
+  margin-right: -4px;
 }
 
 .popover-content button:hover {
@@ -286,6 +316,3 @@ header #mood-change {
 .restaurant-price .off {
   opacity: 0.5;
 }
-=======
-}
->>>>>>> beed1ee71e7c5ae58f2e832a173c6e4d28116117
