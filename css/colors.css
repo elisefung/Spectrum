@@ -1,19 +1,17 @@
 /* GREEN */
 body.green {
+  /*background-color: rgb(16, 216, 160);*/
+  background-color: rgb(104, 221, 185);
+}
+
+.green .panel-heading {
+  /*background-color: rgb(19, 170, 123);*/
   background-color: rgb(16, 216, 160);
 }
 
-/*body.green #q1,
-body.green #q2 {
-  background-color: #e7e7e7;
-}*/
-
-.green .panel-heading {
-  background-color: rgb(19, 170, 123);
-}
-
 .green .panel-body {
-  background-color: rgb(134, 219, 192);
+  /*background-color: rgb(134, 219, 192);*/
+  background-color: rgb(220, 249, 239);
 }
 
 .color-btn button.green {
@@ -26,15 +24,18 @@ body.green #q2 {
 
 /* LIGHT BLUE */
 body.lightblue {
-  background-color: rgb(137, 206, 224);
+  /*background-color: rgb(137, 206, 224);*/
+  background-color: rgb(166, 219, 232);
 }
 
 .lightblue .panel-heading {
-  background-color: rgb(100, 189, 232);
+  /*background-color: rgb(100, 189, 232);*/
+  background-color: rgb(137, 206, 224);
 }
 
 .lightblue .panel-body{
-  background-color: rgb(170, 216, 229);
+  /*background-color: rgb(170, 216, 229);*/
+  background-color: rgb(223, 240, 244);
 }
 
 .color-btn button.lightblue {
@@ -47,15 +48,18 @@ body.lightblue {
 
 /* DARK BLUE */
 body.darkblue {
-  background-color: rgb(41, 78, 150);
+  /*background-color: rgb(41, 78, 150);*/
+  background-color: rgb(67, 108, 175);
 }
 
 .darkblue .panel-heading {
-  background-color: rgb(20, 61, 150);
+  /*background-color: rgb(20, 61, 150);*/
+  background-color: rgb(41, 78, 150);
 }
 
 .darkblue .panel-body {
-  background-color: rgb(62, 92, 150);
+  /*background-color: rgb(62, 92, 150);*/
+  background-color: rgb(218, 230, 247);
 }
 
 .color-btn button.darkblue {
@@ -68,15 +72,18 @@ body.darkblue {
 
 /* PURPLE */
 body.purple {
-  background-color: rgb(130, 91, 193);
+  /*background-color: rgb(130, 91, 193);*/
+  background-color: rgb(170, 141, 224);
 }
 
 .purple .panel-heading {
-  background-color: rgb(112, 64, 188);
+  /*background-color: rgb(112, 64, 188);*/
+  background-color: rgb(130, 91, 193);
 }
 
 .purple .panel-body{
-  background-color: rgb(194, 172, 229);
+  /*background-color: rgb(194, 172, 229);*/
+  background-color: rgb(231, 223, 244);
 }
 
 .color-btn button.purple {
@@ -89,15 +96,18 @@ body.purple {
 
 /* PINK */
 body.pink {
-  background-color: rgb(240, 124, 159);
+  /*background-color: rgb(240, 124, 159);*/
+  background-color: rgb(242, 162, 189);
 }
 
 .pink .panel-heading {
-  background-color: rgb(225, 73, 109);
+  /*background-color: rgb(225, 73, 109);*/
+  background-color: rgb(240, 124, 159);
 }
 
 .pink .panel-body {
-  background-color: rgb(237, 174, 195);
+  /*background-color: rgb(237, 174, 195);*/
+  background-color: rgb(249, 229, 236);
 }
 
 .color-btn button.pink {
@@ -110,15 +120,18 @@ body.pink {
 
 /* RED */
 body.red {
-  background-color: rgb(203, 29, 63);
+  /*background-color: rgb(203, 29, 63);*/
+  background-color: rgb(229, 23, 53);
 }
 
 .red .panel-heading {
-  background-color: rgb(158, 16, 50);
+  /*background-color: rgb(158, 16, 50);*/
+  background-color: rgb(204, 21, 47);
 }
 
 .red .panel-body {
-  background-color: rgb(204, 133, 150);
+  /*background-color: rgb(204, 133, 150);*/
+  background-color: rgb(242, 224, 228);
 }
 
 .color-btn button.red {
@@ -131,42 +144,48 @@ body.red {
 
 /* ORANGE */
 body.orange {
-  background-color: rgb(247, 113, 67);
+  /*background-color: rgb(247, 113, 67);*/
+  background-color: rgb(244, 120, 86);
 }
 
 .orange .panel-heading {
-  background-color: rgb(226, 88, 39);
+  /*background-color: rgb(226, 88, 39);*/
+  background-color: rgb(244, 97, 56);
 }
 
 .orange .panel-body {
-  background-color: rgb(247, 176, 151);
+  /*background-color: rgb(247, 176, 151);*/
+  background-color: rgb(249, 229, 225);
 }
 
 .color-btn button.orange {
-  background-color: rgb(247, 113, 67);
+  background-color: rgb(244, 97, 56);
 }
 
 #mc-orange {
-  background-color: rgb(247, 113, 67);
+  background-color: rgb(244, 97, 56);
 }
 
 /* YELLOW */
 body.yellow {
-  background-color: rgb(249, 220, 95);
+  /*background-color: rgb(249, 220, 95);*/
+  background-color: rgb(249, 232, 133);
 }
 
 .yellow .panel-heading {
-  background-color: rgb(244, 201, 22);
+  /*background-color: rgb(244, 201, 22);*/
+  background-color: rgb(249, 217, 83);
 }
 
 .yellow .panel-body{
-  background-color: rgb(244, 228, 162);
+  /*background-color: rgb(244, 228, 162);*/
+  background-color: rgb(249, 246, 232);
 }
 
 .color-btn button.yellow {
-  background-color: rgb(249, 220, 95);
+  background-color: rgb(249, 217, 83);
 }
 
 #mc-yellow {
-  background-color: rgb(249, 220, 95);
+  background-color: rgb(249, 217, 83);
 }

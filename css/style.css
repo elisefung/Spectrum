@@ -28,7 +28,7 @@ body {
   padding-top: 10px;
 }
 
-.navbar .navbar-brand {
+/*.navbar .navbar-brand {
   font-size: 45px;
   font-weight: 700;
   position: relative;
@@ -42,11 +42,11 @@ body {
   left: 13px;
   top: 13px;
   color: rgba(255, 0, 0, 0.5);
-}
+}*/
 
-.navbar-default .navbar-brand:hover {
+/*.navbar-default .navbar-brand:hover {
   color: rgba(0, 0, 255, 0.5);
-}
+}*/
 
 /* dropdown */
 .navbar-default .navbar-collapse{
@@ -58,6 +58,7 @@ body {
   color: rgb(0, 0, 0);
   padding-left: 28px;
   padding-right: 0px;
+  padding-top: 24px;
 }
 
 .navbar-default .navbar-nav>.open>a:hover,
