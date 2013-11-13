@@ -81,17 +81,23 @@
           <!-- Page 2 -->
           <div id="q2" class="item">
             <h2 class="question">Pick a color</h2>
+            <div id="color-btn-wrap">
               <div class="row">
-              <a class="color-btn col-md-offset-2 col-md-1 col-xs-offset-2 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="green"><button type="button" class="btn btn-default green"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button" class="btn btn-default lightblue"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="darkblue"><button type="button" class="btn btn-default darkblue"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="purple"><button type="button" class="btn btn-default purple"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="pink"><button type="button" class="btn btn-default pink"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="red"><button type="button" class="btn btn-default red"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="orange"><button type="button" class="btn btn-default orange"></button></a>
-              <a class="color-btn col-md-1 col-xs-1" href="#carousel-spectrum" data-slide="next" data-color="yellow"><button type="button" class="btn btn-default yellow"></button></a>
+                <a class="color-btn col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="green"><button type="button" class="btn btn-default green"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="lightblue"><button type="button" class="btn btn-default lightblue"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="darkblue"><button type="button" class="btn btn-default darkblue"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="purple"><button type="button" class="btn btn-default purple"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="pink"><button type="button" class="btn btn-default pink"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="red"><button type="button" class="btn btn-default red"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="orange"><button type="button" class="btn btn-default orange"></button></a>
+                <a class="color-btn col-md-1 col-sm-1" href="#carousel-spectrum" data-slide="next" data-color="yellow"><button type="button" class="btn btn-default yellow"></button></a>
+              </div>
+            </div>
+            <div class="row">
+              <a class="col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1 back-btn" data-target="#carousel-spectrum" data-slide-to="0"><button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i>  Go back</button></a>
             </div>
           </div>
+
 
           <!-- Page 3 -->
           <div id="results" class="item col-md-12">
@@ -374,39 +380,46 @@
       });
       
       // dropdown/popover hovers
-      // $('.dropdown-menu').hide();
-      // $('.popover').hide();
-      // 
-      // $('.dropdown-toggle').on('hover', function() {
-      //   $('.dropdown-menu').show();
-      // });
-      // $('#moodchange').on('hover', function() {
-      //   $('.popover').show();
+      $('.dropdown-toggle, .dropdown-menu').hover(function() {
+        $('.dropdown-menu').show();
+      }, function() {
+        $('.dropdown-menu').hide();
+      });
+      // $('a#moodchange').hover(function() {
+      //   $('.popover.bottom').show();
+      // }, function() {
+      //   $('.popover.bottom').hide();
       // });
       
+      //window resizing
       $(window).resize(function() {
       	var width = $(window).width();
-      	if (width < 460) {
+      	if (width > 400) {
+    		  $('.activity-btn .btn, .color-btn .btn').removeClass('btn-block');
+          $('.activity-btn .btn, .color-btn .btn').addClass('btn-default');
+    	  }    
+      	if (width < 400) {
       		$('.activity-btn .btn').removeClass('btn-default');
           $('.activity-btn .btn').addClass('btn-block');
           $('.activity-btn .btn').css({'margin-left':'0px'});
       	}
-      });
-      $(window).resize(function() {
-      	var width = $(window).width();
-      	if (width > 460) {
-    		  $('.activity-btn .btn').removeClass('btn-block');
-          $('.activity-btn .btn').addClass('btn-default');
-          
-    	  }
+        if (width > 768) {
+          $('.color-btn .btn').css({'height':'280px'});
+        }
+        if (width < 768) {
+          $('.color-btn .btn').css({'height':'80px'});
+        }
       });
       $(document).ready(function(){
       	var width = $(window).width();
-      	if (width < 460) {
+      	if (width < 400) {
       		$('.activity-btn .btn').removeClass('btn-default');
           $('.activity-btn .btn').addClass('btn-block');
           $('.activity-btn .btn').css({'margin-left':'0px'});
       	}
+        if (width < 768) {
+          $('.color-btn .btn').css({'height':'80px'});
+        }
       });
     });
     </script>

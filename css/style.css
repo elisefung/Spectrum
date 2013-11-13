@@ -141,7 +141,7 @@ footer {
   margin: 0 auto;
 }
 
-.activity-btn button {
+.activity-btn button, .back-btn button {
   font-size: 18px;
   margin: 16px;
   border: 2px solid #ffffff;
@@ -150,10 +150,15 @@ footer {
   color: rgb(62, 62, 62);
 }
 
-.activity-btn button:hover {
+.activity-btn button:hover, .back-btn button:hover {
   border: 2px solid #ffffff;
   background-color: rgb(184, 184, 184);
   color: #333333;
+  text-decoration: none;
+}
+
+#color-btn-wrap {
+  max-width: 100%;  
 }
 
 .color-btn button {
@@ -179,7 +184,7 @@ footer {
 
 .carousel-inner {
   text-align: center;
-  min-height: 480px;
+  min-height: 485px;
 }
 
 .carousel-inner #results {
@@ -203,21 +208,16 @@ footer {
   #q1, #q2 {
     height: auto;
   }
-  /* not working currently */
-  .color-btn button {
-    height: 100px;
-  }
   #activity-btn-wrap {
     width: 100%;
   }
 }
 
-@media screen and (max-width: @screen-xs-max){
-  .activity-btn button {
-    width: 400px !important;
-  }
+.back-btn button {
+  font-size: 14px;
+  margin-top: 22px;
+  margin-left: 0px;
 }
-
 /*-------- RESULTS --------*/
 
 #results .row {
@@ -272,12 +272,12 @@ header #mood-change {
 .panel button {
   border: none;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
   outline: none;
 }
 
 .panel button:hover {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* mood change popover */ 
