@@ -173,7 +173,7 @@ footer {
   opacity: 1;
 }
 
-.activity-btn button:focus, .color-btn button:focus {
+.activity-btn button:focus, .color-btn button:focus, .back-btn button:focus {
   outline: none !important; 
   box-shadow: none !important;
 }
