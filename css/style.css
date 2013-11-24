@@ -137,7 +137,7 @@ footer {
 }
 
 #activity-btn-wrap {
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -278,6 +278,31 @@ header #mood-change {
 
 .panel button:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* mood change dropdown */ 
+
+#mood-dropdown {
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+  width: 173px;
+  padding: 14px;
+  margin-top: 22px;
+  margin-left: 500px;
+}
+
+#mood-dropdown button {
+  width: 18px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  opacity: 0.8;
+  padding: 0px;
+  margin-right: -4px;
 }
 
 /* mood change popover */ 
