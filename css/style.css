@@ -28,26 +28,6 @@ body {
   padding-top: 10px;
 }
 
-/*.navbar .navbar-brand {
-  font-size: 45px;
-  font-weight: 700;
-  position: relative;
-  display: inline;
-  color: rgba(0, 0, 255, 0.5);
-}
-
-.navbar-brand:after {
-  content: "spectrum";
-  position: absolute;
-  left: 13px;
-  top: 13px;
-  color: rgba(255, 0, 0, 0.5);
-}*/
-
-/*.navbar-default .navbar-brand:hover {
-  color: rgba(0, 0, 255, 0.5);
-}*/
-
 /* dropdown */
 .navbar-default .navbar-collapse{
   border: none;
@@ -312,51 +292,6 @@ header #mood-change {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-/* mood change popover */ 
-
-/*.popover {
-  border-radius: 0px;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: rgb(255, 255, 255);
-  max-width: 210px;
-  padding-bottom: 4px;
-  margin-right: 40px;
-}
-
-.popover-title {
-  background-color: #fff;
-  border: none;
-  padding-top: 8px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 0px;
-}
-
-.popover-content {
-  width: 280px;
-}
-
-.popover-content button {
-  width: 18px;
-  height: 40px;
-  outline: none;
-  border: none;
-  border-radius: 0px;
-  opacity: 0.8;
-  padding: 0px;
-  margin-right: -4px;
-}
-
-.popover-content button:hover {
-  opacity: 1;
-}
-
-.popover-content button:focus {
-  outline: none;
-}*/
 
 .restaurant-ratings i {
   padding-right: 2px;
