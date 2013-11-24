@@ -141,7 +141,7 @@ footer {
   margin: 0 auto;
 }
 
-.activity-btn button, .back-btn button {
+.activity-btn button, .back-btn button, .restart-btn button {
   font-size: 18px;
   margin: 16px;
   border: 2px solid #ffffff;
@@ -150,7 +150,7 @@ footer {
   color: rgb(62, 62, 62);
 }
 
-.activity-btn button:hover, .back-btn button:hover {
+.activity-btn button:hover, .back-btn button:hover, .restart-btn button:hover {
   border: 2px solid #ffffff;
   background-color: rgb(184, 184, 184);
   color: #333333;
@@ -173,7 +173,7 @@ footer {
   opacity: 1;
 }
 
-.activity-btn button:focus, .color-btn button:focus, .back-btn button:focus {
+.activity-btn button:focus, .color-btn button:focus, .back-btn button:focus, .restart-btn button:focus {
   outline: none !important; 
   box-shadow: none !important;
 }
@@ -290,11 +290,13 @@ header #mood-change {
   background-color: rgb(255, 255, 255);
   width: 173px;
   padding: 14px;
-  margin-top: 22px;
-  margin-left: 500px;
+  padding-left: 10px;
+  margin-top: 8px !important;
+  margin-right: 0px;
+  text-align: center;
 }
 
-#mood-dropdown button {
+#mood-dropdown .color-change button {
   width: 18px;
   height: 40px;
   outline: none;
@@ -305,9 +307,15 @@ header #mood-change {
   margin-right: -4px;
 }
 
+.restart-btn button {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 /* mood change popover */ 
 
-.popover {
+/*.popover {
   border-radius: 0px;
   border: none;
   -webkit-box-shadow: none;
@@ -348,7 +356,7 @@ header #mood-change {
 
 .popover-content button:focus {
   outline: none;
-}
+}*/
 
 .restaurant-ratings i {
   padding-right: 2px;
