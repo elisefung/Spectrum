@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spectrum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" media="screen">
+  <link href="../css/colors.css" rel="stylesheet" media="screen">
+  
+	<link rel="shortcut icon" href="../favicon.ico"/>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="../../Spectrum"><img src="../img/spectrumlogo.png" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" id="explore-toggle" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>&nbsp;&nbsp;Explore</a>
+            <ul id="explore-dropdown" class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Music</a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i>&nbsp;&nbsp;Video</a></li>
+              <li><a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;Restaurant</a></li>
+              <li><a href="#"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Drink</a></li>
+              <li><a href="#"><i class="fa fa-sun-o"></i>&nbsp;&nbsp;Activity</a></li>
+              <li><a href="#"><i class="fa fa-laptop"></i>&nbsp;&nbsp;Interwebz</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-smile-o">&nbsp;&nbsp;Log In</i></a></li>
+        </ul>
+      </div> <!-- end navbar-collapse -->
+    </div>
+  </nav> <!-- end navbar -->
+  
+  <div class="container main">
+    <div class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <a href="../index.html"><li></li></a>
+        <li class="active"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div id="q2" class="item active col-md-12">
+          <h2 class="question">Pick a color</h2>
+          <div id="color-btn-wrap">
+            <div class="row">
+              <a class="color-btn col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1" href="green/results.html"><button type="button" class="btn btn-default green"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="lightblue/results.html"><button type="button" class="btn btn-default lightblue"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="darkblue/results.html"><button type="button" class="btn btn-default darkblue"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="purple/results.html"><button type="button" class="btn btn-default purple"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="pink/results.html"><button type="button" class="btn btn-default pink"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="red/results.html"><button type="button" class="btn btn-default red"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="orange/results.html"><button type="button" class="btn btn-default orange"></button></a>
+              <a class="color-btn col-md-1 col-sm-1" href="yellow/results.html"><button type="button" class="btn btn-default yellow"></button></a>
+            </div>
+          </div>
+          <div class="row">
+            <a class="col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1 back-btn" href="../index.html"><button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i>  Go back</button></a>
+          </div>
+      </div> <!-- end page -->
+    </div> <!-- end carousel-inner -->
+  </div> <!-- end carousel-spectrum -->
+</div> <!-- end main container -->
+
+  <footer>
+    <div class="container">
+      Spectrum / Human Computer Interaction 
+      <div class="pull-right">
+        <a href="elisefung.com" target="_blank">Elise Fung</a> &amp; 
+        <a href="stephalee.com" target="_blank">Stephanie Lee</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  // dropdown/popover hovers
+  $('#explore-toggle, #explore-dropdown').hover(function() {
+    $('#explore-dropdown').show();
+  }, function() {
+    $('#explore-dropdown').hide();
+  });
+  
+  //window resizing
+  $(window).resize(function() {
+  	var width = $(window).width();
+  	if (width > 400) {
+		  $('.activity-btn .btn, .color-btn .btn').removeClass('btn-block');
+      $('.activity-btn .btn, .color-btn .btn').addClass('btn-default');
+	  }    
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width > 768) {
+      $('.color-btn .btn').css({'height':'280px'});
+    }
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+  $(document).ready(function(){
+  	var width = $(window).width();
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>

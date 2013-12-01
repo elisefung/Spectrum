@@ -1,0 +1,315 @@
+body {
+  background-color: #e7e7e7;
+  height: 100%;
+  color: #000;
+}
+
+/* container 1200px media query */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+
+.main a {
+  color: inherit;
+}
+
+.navbar a, a#mood-change {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  border-radius: 0px;
+  border: none;
+  background: none;
+  margin-bottom: 60px;
+  padding-top: 10px;
+}
+
+/* dropdown */
+.navbar-default .navbar-collapse{
+  border: none;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>li>a{
+  color: rgb(0, 0, 0);
+  padding-left: 28px;
+  padding-right: 0px;
+  padding-top: 24px;
+}
+
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover, 
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+  padding: 10px -40px;
+  margin-top: -6px !important;
+  margin-right: -40px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  background-color: rgb(255, 255, 255);
+  min-width: 100px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.dropdown-menu>li>a:hover, 
+.dropdown-menu>li>a:focus {
+  background-color: rgb(250, 250, 250);
+}
+
+/* toggle button */
+.navbar-default .navbar-toggle {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+/* footer */
+footer {
+  color: #666666;
+}
+
+footer a {
+  color: #666666;
+}
+
+footer a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0px;
+  padding: 8px 0px; 
+  font-size: 12px;
+  background-color: rgba(255, 255, 255); 
+  background-color: rgba(255, 255, 255, .15);
+  margin-top: 120px;
+}
+
+/*-------- INDEX --------*/
+.question {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#activity-btn-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.activity-btn button, .back-btn button, .restart-btn button {
+  font-size: 18px;
+  margin: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  background-color: #cccccc;
+  color: rgb(62, 62, 62);
+}
+
+.activity-btn button:hover, .back-btn button:hover, .restart-btn button:hover {
+  border: 2px solid #ffffff;
+  background-color: rgb(184, 184, 184);
+  color: #333333;
+  text-decoration: none;
+}
+
+#color-btn-wrap {
+  max-width: 100%;  
+}
+
+.color-btn button {
+  width: 100%;
+  height: 280px;
+  border-radius: 0px;
+  opacity: .9;
+  border: none;
+}
+
+.color-btn button:hover {
+  opacity: 1;
+}
+
+.activity-btn button:focus, .color-btn button:focus, .back-btn button:focus, .restart-btn button:focus {
+  outline: none !important; 
+  box-shadow: none !important;
+}
+
+#q2 .col-md-1, #q2 .row {
+  padding: 0px !important;
+}
+
+.carousel-inner {
+  text-align: center;
+  min-height: 485px;
+}
+
+.carousel-inner #results {
+  text-align: left;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+#q1, #q2 {
+  margin-bottom: 40px;
+}
+
+#q2 {
+  width: 120%;
+  margin-left: -10%;
+}
+
+@media screen and (min-width: @screen-sm-max) {
+  #q1, #q2 {
+    height: auto;
+  }
+  #activity-btn-wrap {
+    width: 100%;
+  }
+}
+
+.back-btn button {
+  font-size: 14px;
+  margin-top: 22px;
+  margin-left: 0px;
+}
+/*-------- RESULTS --------*/
+
+#results .row {
+  margin-right: 0px;
+}
+
+header #results-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+header #mood-change {
+  padding-top: 22px;
+  outline: none;
+}
+
+.panel{
+  border: none;
+}
+
+.panel-group .panel {
+  border-radius: 0px;
+}
+
+.panel-heading {
+  border-radius: 0px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.panel .panel-heading .panel-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.panel .panel-heading .panel-descrip {
+  margin-bottom: 0px;
+}
+
+.panel a.rec-nav {
+  padding-top: 20px;
+}
+
+.panel #collapseDrink ul {
+  list-style: circle;
+}
+
+.panel button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+.panel button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* mood change dropdown */ 
+
+#mood-dropdown {
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+  width: 173px;
+  padding: 14px;
+  padding-left: 10px;
+  margin-top: 8px !important;
+  margin-right: 0px;
+  text-align: center;
+}
+
+#mood-dropdown .color-change button {
+  width: 18px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  opacity: 0.8;
+  padding: 0px;
+  margin-right: -4px;
+}
+
+.restart-btn button {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.restaurant-ratings i {
+  padding-right: 2px;
+}
+
+.restaurant-ratings {
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.restaurant-price {
+  display: inline-block;
+}
+
+.restaurant-price i {
+  padding-right: 2px;
+}
+
+.restaurant-price .off {
+  opacity: 0.5;
+}
