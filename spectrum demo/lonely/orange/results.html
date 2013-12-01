@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spectrum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet" media="screen">
+  <link href="../../css/colors.css" rel="stylesheet" media="screen">
+  
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="orange">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="../../../Spectrum"><img src="../../img/spectrumlogo.png" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" id="explore-toggle" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>&nbsp;&nbsp;Explore</a>
+            <ul id="explore-dropdown" class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Music</a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i>&nbsp;&nbsp;Video</a></li>
+              <li><a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;Restaurant</a></li>
+              <li><a href="#"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Drink</a></li>
+              <li><a href="#"><i class="fa fa-sun-o"></i>&nbsp;&nbsp;Activity</a></li>
+              <li><a href="#"><i class="fa fa-laptop"></i>&nbsp;&nbsp;Interwebz</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-smile-o">&nbsp;&nbsp;Log In</i></a></li>
+        </ul>
+      </div> <!-- end navbar-collapse -->
+    </div>
+  </nav> <!-- end navbar -->
+  
+  <div class="container main">
+    <div class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      <div id="results" class="item active col-md-12">
+        <header class="row">
+          <div class="col-xs-9">
+            <h2 id="results-title">for studying</h2>
+          </div>
+          <div>
+            <div class="dropdown pull-right" style="padding-top: 12px;">
+              <a href="#" id="mood-toggle" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../../favicon.ico" width="20px;" style="padding-bottom:2px; padding-right: 2px;"/>Not Feelin' It?
+              </a>
+              <div id="mood-dropdown" class="dropdown-menu">
+                <p id="mood-title">choose another color</p>
+                <a class="color-change" href="../green/results.html"><button type="button" id="mc-green" class="btn btn-default"></button></a>
+                <a class="color-change" href="../lightblue/results.html"><button type="button" id="mc-lightblue" class="btn btn-default"></button></a>
+                <a class="color-change" href="../darkblue/results.html"><button type="button" id="mc-darkblue" class="btn btn-default"></button></a>
+                <a class="color-change" href="../purple/results.html"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
+                <a class="color-change" href="../pink/results.html"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
+                <a class="color-change" href="../red/results.html"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
+                <a class="color-change" href="#"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
+                <a class="color-change" href="../yellow/results.html"><button type="button" id="mc-yellow" class="btn btn-default"></button></a> <br><br>
+                or <br><a href="../../Spectrum" class="restart-btn"><button type="button" class="btn btn-default">start over</button></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Collapse -->
+        <div class="panel-group" id="accordion">
+          <!-- Music -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseMusic">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Music</h3> -->
+                  <i class="fa fa-headphones fa-3x"></i>
+                </div>
+                <div class="col-xs-11"><p class="panel-name">Feel Good Hip Hop</p>
+                  <p class="panel-descrip">underground hip hop and rap that'll bring you up</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseMusic" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <iframe src="http://8tracks.com/mixes/2910319/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                  </div>
+                  <div class="col-md-5">
+                    <h4>Feel Good</h4>
+                    <p>underground hip hop and hipster rap.</p>
+                    <a class="rec-nav pull-right" href="#">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Video -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseVideo">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Video</h3> -->
+                  <i class="fa fa-youtube-play fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Sick Graffiti</p>
+                  <p class="panel-descrip">awesome graffiti artists that'll inspire you</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseVideo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <iframe width="480" height="345" src="http://www.youtube.com/embed/Pv-Do30-P8A" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-md-5">
+                    <h4>SOFLES &ndash; LIMITLESS.</h4>
+                      <p>Some graffiti artists were allowed to go into an abandoned warehouse with an unlimited amount of paint and a film crew.</p>
+                      <a class="rec-nav pull-right" href="#">next video&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Restaurant -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseRestaurant">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Restaurant</h3> -->
+                  <i style="padding-left: 3px" class="fa fa-cutlery fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Pho Basil</p>
+                  <p class="panel-descrip">get some pho delivered to you while you study</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseRestaurant" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Pho Basil</h4>
+                    <p> <div class="restaurant-ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                    <div class="restaurant-price"><i class="fa fa-dollar"></i><i class="fa fa-dollar"></i><i class="fa fa-dollar off"></i><i class="fa fa-dollar off"></i></div> </p>
+                    <p>Category: Vietnamese, Thai</p>
+                    <p>177 Massachusetts Ave<br/>
+                      (between Clearway St &amp; St Germain St)<br/>
+                      Boston, MA, 02115</p>
+                    <p>(617) 262-5377</br>
+                      <a href="phobasil.com" target="_blank">phobasil.com</a></p>
+                    <p><strong>Mon - Thurs, Sun</strong>  11:30am - 10pm<br/>
+                      <strong>Fri - Sat</strong>  11:30am - 10:30pm</p>
+                    <a href="http://www.yelp.com/biz/pho-basil-boston" target="_blank"><button type="button">View on Yelp</button></a>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x89e37a1af232632d%3A0x410a8f60dbb568e8!2spho+basil!5e0!3m2!1sen!2sus!4v1385878507687" width="400" height="300" frameborder="0" style="border:0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Drink -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseDrink">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Drink</h3> -->
+                  <i class="fa fa-coffee fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Red Bull</p>
+                  <p class="panel-descrip">Red Bull gives you wings</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseDrink" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4>Find it at Wollaston&rsquo;s</h4>
+                      <p>Stop by one of the Wollaston&rsquo;s on campus and grab a red bull to instantly energize you.</p>
+                    </div>
+                  <div class="col-md-5">
+                    <img class="img-responsive" src="../../img/redbull.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Activity -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseActivity">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Activity</h3> -->
+                  <i class="fa fa-sun-o fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Meditation Break</p>
+                  <p class="panel-descrip">calm your mind with some meditation exercises</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseActivity" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4>Concentration Exercise</h4>
+                    <p>Be seated on a chair or on the floor with your back straight. Look at a burning candle in front of you. Direct all your attention onto the candle flame, and fix your eyes onto the flame.</p>
+
+                    <p>Feel that your breath is coming from the candle when you breathe in, and when you breath out, it is going back into the candle. Only you and the candle flame exist, nothing else.</p>
+
+                    <p>Then close your eyes and try to see the candle flame with your inner eye as clearly as if you had your eyes open. Do not change the image of the candle, and do not think of anything else. When you loose your concentration, start the exercise again from the beginning.</p>
+                    <a class="rec-nav pull-right" href="#">next pose&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                  <div class="col-md-5">
+                    <img class="img-responsive" src="../../img/meditation.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Interwebz -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseInterwebz">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Interwebz</h3> -->
+                  <i class="fa fa-laptop fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Buzzfeed Picks: Awesome Art</p>
+                  <p class="panel-descrip">take a quick mental break and check out this post</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseInterwebz" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="col-md-6">
+                  <a href="http://www.buzzfeed.com/peggy/art-installations-you-want-to-live-in" target="_blank"><h4>22 Dreamy Art Installations You Want To Live In</h4></a>
+                  <p>These interactive art installations bring a little glimpse of the surreal to real life.</p>
+                  <a href="http://www.buzzfeed.com/peggy/art-installations-you-want-to-live-in" target="_blank"><button type="button">read post</button></a>
+                  <a class="rec-nav pull-right" href="#">next pick&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="col-md-6">
+                  <img src="../../img/artinstallations.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end results page -->
+    </div> <!-- end carousel-inner -->
+  </div> <!-- end carousel-spectrum -->
+</div> <!-- end main container -->
+
+  <footer>
+    <div class="container">
+      Spectrum / Human Computer Interaction 
+      <div class="pull-right">
+        <a href="elisefung.com" target="_blank">Elise Fung</a> &amp; 
+        <a href="stephalee.com" target="_blank">Stephanie Lee</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  // dropdown/popover hovers
+  $('#explore-toggle, #explore-dropdown').hover(function() {
+    $('#explore-dropdown').show();
+  }, function() {
+    $('#explore-dropdown').hide();
+  });
+  
+  //window resizing
+  $(window).resize(function() {
+  	var width = $(window).width();
+  	if (width > 400) {
+		  $('.activity-btn .btn, .color-btn .btn').removeClass('btn-block');
+      $('.activity-btn .btn, .color-btn .btn').addClass('btn-default');
+	  }    
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width > 768) {
+      $('.color-btn .btn').css({'height':'280px'});
+    }
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+  $(document).ready(function(){
+  	var width = $(window).width();
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>

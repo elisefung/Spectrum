@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spectrum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet" media="screen">
+  <link href="../../css/colors.css" rel="stylesheet" media="screen">
+  
+	<link rel="shortcut icon" href="../../favicon.ico"/>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="pink">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="../../../Spectrum"><img src="../../img/spectrumlogo.png" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" id="explore-toggle" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>&nbsp;&nbsp;Explore</a>
+            <ul id="explore-dropdown" class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;Music</a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i>&nbsp;&nbsp;Video</a></li>
+              <li><a href="#"><i class="fa fa-cutlery"></i>&nbsp;&nbsp;Restaurant</a></li>
+              <li><a href="#"><i class="fa fa-coffee"></i>&nbsp;&nbsp;Drink</a></li>
+              <li><a href="#"><i class="fa fa-sun-o"></i>&nbsp;&nbsp;Activity</a></li>
+              <li><a href="#"><i class="fa fa-laptop"></i>&nbsp;&nbsp;Interwebz</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-smile-o">&nbsp;&nbsp;Log In</i></a></li>
+        </ul>
+      </div> <!-- end navbar-collapse -->
+    </div>
+  </nav> <!-- end navbar -->
+  
+  <div class="container main">
+    <div class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      <div id="results" class="item active col-md-12">
+        <header class="row">
+          <div class="col-xs-9">
+            <h2 id="results-title">for studying</h2>
+          </div>
+          <div>
+            <div class="dropdown pull-right" style="padding-top: 12px;">
+              <a href="#" id="mood-toggle" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../../favicon.ico" width="20px;" style="padding-bottom:2px; padding-right: 2px;"/>Not Feelin' It?
+              </a>
+              <div id="mood-dropdown" class="dropdown-menu">
+                <p id="mood-title">choose another color</p>
+                <a class="color-change" href="../darkblue/results.html"><button type="button" id="mc-green" class="btn btn-default"></button></a>
+                <a class="color-change" href="../lightblue/results.html"><button type="button" id="mc-lightblue" class="btn btn-default"></button></a>
+                <a class="color-change" href="../darkblue/results.html"><button type="button" id="mc-darkblue" class="btn btn-default"></button></a>
+                <a class="color-change" href="../purple/results.html"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
+                <a class="color-change" href="#"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
+                <a class="color-change" href="../red/results.html"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
+                <a class="color-change" href="../orange/results.html"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
+                <a class="color-change" href="../yellow/results.html"><button type="button" id="mc-yellow" class="btn btn-default"></button></a> <br><br>
+                or <br><a href="../../Spectrum" class="restart-btn"><button type="button" class="btn btn-default">start over</button></a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Collapse -->
+        <div class="panel-group" id="accordion">
+          <!-- Music -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseMusic">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Music</h3> -->
+                  <i class="fa fa-headphones fa-3x"></i>
+                </div>
+                <div class="col-xs-11"><p class="panel-name">Upbeat Indie Pop</p>
+                  <p class="panel-descrip">some happy tunes to pick you up while you study</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseMusic" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <iframe src="http://8tracks.com/mixes/2787126/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                  </div>
+                  <div class="col-md-5">
+                    <h4>Quick Indie Pick-me-up</h4>
+                    <p>includes artists like Capital Cities, Empire of the Sun, and The Leisure Society.</p>
+                    <a class="rec-nav pull-right" href="#">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Video -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseVideo">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Video</h3> -->
+                  <i class="fa fa-youtube-play fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Silly Cat Videos</p>
+                  <p class="panel-descrip">because cats</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseVideo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <iframe width="480" height="345" src="http://www.youtube.com/embed/J---aiyznGQ"></iframe>
+                  </div>
+                  <div class="col-md-5">
+                    <h4>Keyboard Cat</h4>
+                      <p>Keyboard Cat is the coolest cat in the world!</p>
+                      <a class="rec-nav pull-right" href="#">next video&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Restaurant -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseRestaurant">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Restaurant</h3> -->
+                  <i style="padding-left: 3px" class="fa fa-cutlery fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Boloco</p>
+                  <p class="panel-descrip">its burrito time!</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseRestaurant" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Boloco</h4>
+                    <p> <div class="restaurant-ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></div>
+                    <div class="restaurant-price"><i class="fa fa-dollar"></i><i class="fa fa-dollar off"></i><i class="fa fa-dollar off"></i><i class="fa fa-dollar off"></i></div> </p>
+                    <p>Category: fast food, burritos, smoothies</p>
+                    <p>Marino Center, Northeastern University<br/>
+                      359 Huntington Ave<br/>
+                      Boston, MA, 02115</p>
+                    <p>(617) 536-6814</br>
+                      <a href="boloco.com" target="_blank">boloco.com</a></p>
+                    <p><strong>Mon - Sun</strong>  10am - 11pm<br/></p>
+                    <a href="http://www.yelp.com/biz/boloco-northeastern-boston-2" target="_blank"><button type="button">View on Yelp</button></a>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11796.170599737088!2d-71.09404469999996!3d42.34161405000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbc6ef6e581fc687!2sBoloco!5e0!3m2!1sen!2sus!4v1385874847311" width="400" height="300" frameborder="0" style="border:0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Drink -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseDrink">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Drink</h3> -->
+                  <i class="fa fa-coffee fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Bubble Tea</p>
+                  <p class="panel-descrip">milky iced tea &amp; chewy pearls</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseDrink" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4>Find it at Argo Tea</h4>
+                      <p>Stop by Argo Tea in Snell Library and order a bubble tea. Refreshing choices of freshly brewed black, green and red tea blended with milk and all natural de coco jelly pearls. Try it with coconut!</p>
+                    <h4>Or make one yourself</h4>
+                    <h5>What you need</h5>
+                      <ul>
+                        <li>1/4 cup boba tapioca pearls per serving</li>
+                        <li>1-2 tea bags per serving, any kind</li>
+                        <li>1/2 cup water</li>
+                        <li>1/2 cup sugar</li>
+                        <li>milk, almond milk, or condensed milk</li>
+                      </ul>
+                      <h5>What to do</h5>
+                      <ol>
+                        <li>bring 1 cup of water to a boil</li>
+                        <li>steep the tea for 15 minutes, then let the tea chill</li>
+                        <li>dissolve the sugar in a small amount of hot water to make a sugar syrup</li>
+                        <li>pour the tea over the boba, sugar syrup, and ice</li>
+                        <li>add milk to taste</li>
+                      </ol>
+                    </div>
+                  <div class="col-md-5">
+                    <img class="img-responsive" src="../../img/bubbletea.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Activity -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseActivity">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Activity</h3> -->
+                  <i class="fa fa-sun-o fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">10 Minute Workout</p>
+                  <p class="panel-descrip">exercise and wake up your body and clear your mind</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseActivity" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4>10 Push Ups</h4>
+                    <p>Work those biceps and do 10 push ups</p>
+                    <a class="rec-nav pull-right" href="#">next exercise&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
+                  <div class="col-md-5">
+                    <img class="img-responsive" src="../../img/pushup.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Interwebz -->
+          <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseInterwebz">
+              <div class="panel-heading row">
+                <div class="col-xs-1">
+                  <!-- <h3 class="panel-title">Interwebz</h3> -->
+                  <i class="fa fa-laptop fa-3x"></i>
+                </div>
+                  <div class="col-xs-11"><p class="panel-name">Buzzfeed Picks: Ridiculous Animals</p>
+                  <p class="panel-descrip">take a quick mental break and check out this post</p>
+                </div>
+              </div>
+            </a>
+            <div id="collapseInterwebz" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="col-md-6">
+                  <a href="http://www.buzzfeed.com/joannaborns/giant-rabbits" target="_blank"><h4>25 Giant Bunnies So Big They Could Destroy You</h4></a>
+                  <p>These bunnies are big as hell. And they&rsquo;re not sorry.</p>
+                  <a href="http://www.buzzfeed.com/joannaborns/giant-rabbits" target="_blank"><button type="button">read post</button></a>
+                  <a class="rec-nav pull-right" href="#">next pick&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="col-md-6">
+                  <img src="../../img/read_bunnies.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end results page -->
+    </div> <!-- end carousel-inner -->
+  </div> <!-- end carousel-spectrum -->
+</div> <!-- end main container -->
+
+  <footer>
+    <div class="container">
+      Spectrum / Human Computer Interaction 
+      <div class="pull-right">
+        <a href="elisefung.com" target="_blank">Elise Fung</a> &amp; 
+        <a href="stephalee.com" target="_blank">Stephanie Lee</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  // dropdown/popover hovers
+  $('#explore-toggle, #explore-dropdown').hover(function() {
+    $('#explore-dropdown').show();
+  }, function() {
+    $('#explore-dropdown').hide();
+  });
+  
+  //window resizing
+  $(window).resize(function() {
+  	var width = $(window).width();
+  	if (width > 400) {
+		  $('.activity-btn .btn, .color-btn .btn').removeClass('btn-block');
+      $('.activity-btn .btn, .color-btn .btn').addClass('btn-default');
+	  }    
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width > 768) {
+      $('.color-btn .btn').css({'height':'280px'});
+    }
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+  $(document).ready(function(){
+  	var width = $(window).width();
+  	if (width < 400) {
+  		$('.activity-btn .btn').removeClass('btn-default');
+      $('.activity-btn .btn').addClass('btn-block');
+      $('.activity-btn .btn').css({'margin-left':'0px'});
+  	}
+    if (width < 768) {
+      $('.color-btn .btn').css({'height':'80px'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>
