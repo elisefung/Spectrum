@@ -153,6 +153,21 @@ footer {
   opacity: 1;
 }
 
+#color-info {
+  color: rgb(130, 130, 130);
+}
+
+.popover {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.popover-title {
+  font-weight: 700;
+}
+
 .activity-btn button:focus, .color-btn button:focus, .back-btn button:focus, .restart-btn button:focus {
   outline: none !important; 
   box-shadow: none !important;
@@ -206,6 +221,11 @@ footer {
 }
 
 /*-------- RESULTS --------*/
+
+#playlists .carousel-inner {
+  min-height: 10px;
+  text-align: left;
+}
 
 #results .row {
   margin-right: 0px;

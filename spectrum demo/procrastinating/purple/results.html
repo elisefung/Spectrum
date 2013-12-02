@@ -100,14 +100,42 @@
             <div id="collapseMusic" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="row">
-                  <div class="col-md-7">
-                    <iframe src="http://8tracks.com/mixes/2910319/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
-                  </div>
-                  <div class="col-md-5">
-                    <h4>Feel Good</h4>
-                    <p>underground hip hop and hipster rap.</p>
-                    <a class="rec-nav pull-right" href="#">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                  </div>
+                  <div class="carousel slide" id="playlists" data-ride="carousel" data-wrap="false" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div class="col-md-7">
+                          <iframe src="http://8tracks.com/mixes/2910319/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                        </div>
+                        <div class="col-md-5">
+                          <h4>Feel Good</h4>
+                          <p>underground hip hop and hipster rap.</p>
+                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="1">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div> <!-- end item -->
+                      <div class="item">
+                        <div class="col-md-7">
+                          <iframe src="http://8tracks.com/mixes/2785956/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                        </div>
+                        <div class="col-md-5">
+                          <h4>Take It Easy</h4>
+                          <p>indie rap and hip hop</p>
+                          <a class="rec-nav pull-left" data-target="#playlists" data-slide-to="0"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;prev playlist</a>
+                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="2">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div> <!-- end item -->
+                      <div class="item">
+                        <div class="col-md-7">
+                          <iframe src="http://8tracks.com/mixes/2694581/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                        </div>
+                        <div class="col-md-5">
+                          <h4>rhythmblues</h4>
+                          <p>chill hiphop, r&amp;b, soul</p>
+                          <a class="rec-nav pull-left" data-target="#playlists" data-slide-to="1"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;prev playlist</a>
+                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="0">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div> <!-- end item -->
+                    </div> <!-- end carousel-inner -->
+                  </div> <!-- end carousel -->
                 </div>
               </div>
             </div>
