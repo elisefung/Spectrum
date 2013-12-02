@@ -198,6 +198,13 @@ footer {
   margin-top: 22px;
   margin-left: 0px;
 }
+
+#color-info {
+  font-size: 20px;
+  margin-top: 22px;
+  margin-right: 220px;
+}
+
 /*-------- RESULTS --------*/
 
 #results .row {

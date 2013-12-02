@@ -76,13 +76,16 @@
             </div>
           </div>
           <div class="row">
-            <a class="col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1 back-btn" href="../index.html"><button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i>  Go back</button></a>
+            <a class="col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1 back-btn" href="../index.html"><button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i>  Go back</button></a>     
+            <a href="#" id="color-info" class="pull-right" rel="popover" data-toggle="popover" title="what does the color mean?" data-content=
+              "The color you select helps direct the tone of the suggestions we generate. Don't just pick your favorite color, pick the color which you gravitate towards at this very moment.">
+              <i class="fa fa-question-circle"></i>
+            </a>
           </div>
       </div> <!-- end page -->
     </div> <!-- end carousel-inner -->
   </div> <!-- end carousel-spectrum -->
 </div> <!-- end main container -->
-
   <footer>
     <div class="container">
       Spectrum / Human Computer Interaction 
@@ -99,6 +102,12 @@
 <script src="../js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
+$(document).ready(function(){
+    $('#color-info').popover({
+    placement: 'top',
+    html: true
+  });
+});
 $(document).ready(function(){
   
   // dropdown/popover hovers
