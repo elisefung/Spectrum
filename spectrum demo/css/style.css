@@ -153,19 +153,18 @@ footer {
   opacity: 1;
 }
 
-#color-info {
-  color: rgb(130, 130, 130);
-}
-
 .popover {
   border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  font-size: 12px;
 }
 
 .popover-title {
   font-weight: 700;
+  border-bottom: none;
+  font-size: 12px;
 }
 
 .activity-btn button:focus, .color-btn button:focus, .back-btn button:focus, .restart-btn button:focus {
@@ -217,7 +216,8 @@ footer {
 #color-info {
   font-size: 20px;
   margin-top: 22px;
-  margin-right: 220px;
+  margin-right: 148px;
+  color: rgb(130, 130, 130);
 }
 
 /*-------- RESULTS --------*/
@@ -287,7 +287,20 @@ header #mood-change {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.like-icon {
+  color: rgb(130, 130, 130);
+  font-size: 18px;
+}
+
+.like-icon:hover {
+/*  color: rgb(90, 90, 90);*/
+  color: rgb(255, 106, 102);
+}
+
 /* mood change dropdown */ 
+#mood-toggle:hover {
+  text-decoration: none;
+}
 
 #mood-dropdown {
   border-radius: 0px;

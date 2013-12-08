@@ -55,14 +55,14 @@
     <div class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <a href="../index.html"><li></li></a>
+        <li></li>
         <li class="active"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div id="q2" class="item active col-md-12">
-          <h2 class="question">Pick a color</h2>
+          <h2 class="question">pick a color for feeling nostalgic</h2>
           <div id="color-btn-wrap">
             <div class="row">
               <a class="color-btn col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1" href="green/results.html"><button type="button" class="btn btn-default green"></button></a>
@@ -77,7 +77,7 @@
           </div>
           <div class="row">
             <a class="col-md-offset-2 col-md-1 col-sm-offset-2 col-sm-1 back-btn" href="../index.html"><button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i>  Go back</button></a>     
-            <a href="#" id="color-info" class="pull-right" rel="popover" data-toggle="popover" title="what does the color mean?" data-content=
+            <a href="#" id="color-info" class="pull-right col-md-offset-6 col-md-1" rel="popover" data-toggle="popover" title="Why am I picking a color?" data-content=
               "The color you select helps direct the tone of the suggestions we generate. We use color psychology to recommend the perfect things for you. Don't just pick your favorite color, pick the color which you gravitate towards at this very moment.">
               <i class="fa fa-question-circle"></i>
             </a>
@@ -104,7 +104,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
     $('#color-info').popover({
-    placement: 'top',
+    placement: 'left',
     html: true
   });
 });
