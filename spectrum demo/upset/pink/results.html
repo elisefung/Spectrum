@@ -290,6 +290,11 @@ $(document).ready(function(){
     $('#explore-dropdown').hide();
   });
   
+  // like button 
+  $('.like-icon').click(function() {
+    $(this).css('color', 'rgb(255, 106, 102)')
+  });
+  
   //window resizing
   $(window).resize(function() {
   	var width = $(window).width();
