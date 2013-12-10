@@ -71,7 +71,7 @@
                 <a class="color-change" href="../green/results.html"><button type="button" id="mc-green" class="btn btn-default"></button></a>
                 <a class="color-change" href="../lightblue/results.html"><button type="button" id="mc-lightblue" class="btn btn-default"></button></a>
                 <a class="color-change" href="../darkblue/results.html"><button type="button" id="mc-darkblue" class="btn btn-default"></button></a>
-                <a class="color-change" href="#"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
+                <a class="color-change" href="../purple/results.html"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
                 <a class="color-change" href="../pink/results.html"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
                 <a class="color-change" href="../red/results.html"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
                 <a class="color-change" href="../orange/results.html"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
@@ -100,42 +100,14 @@
             <div id="collapseMusic" class="panel-collapse collapse">
               <div class="panel-body">
                 <div class="row">
-                  <div class="carousel slide" id="playlists" data-ride="carousel" data-wrap="false" data-interval="false">
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <div class="col-md-7">
-                          <iframe src="http://8tracks.com/mixes/2910319/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
-                        </div>
-                        <div class="col-md-5">
-                          <h4>Feel Good<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a></h4>
-                          <p>underground hip hop and hipster rap.</p>
-                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="1">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div> <!-- end item -->
-                      <div class="item">
-                        <div class="col-md-7">
-                          <iframe src="http://8tracks.com/mixes/2785956/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
-                        </div>
-                        <div class="col-md-5">
-                          <h4>Take It Easy</h4>
-                          <p>indie rap and hip hop</p>
-                          <a class="rec-nav pull-left" data-target="#playlists" data-slide-to="0"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;prev playlist</a>
-                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="2">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div> <!-- end item -->
-                      <div class="item">
-                        <div class="col-md-7">
-                          <iframe src="http://8tracks.com/mixes/2694581/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
-                        </div>
-                        <div class="col-md-5">
-                          <h4>rhythmblues</h4>
-                          <p>chill hiphop, r&amp;b, soul</p>
-                          <a class="rec-nav pull-left" data-target="#playlists" data-slide-to="1"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;prev playlist</a>
-                          <a class="rec-nav pull-right" data-target="#playlists" data-slide-to="0">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                      </div> <!-- end item -->
-                    </div> <!-- end carousel-inner -->
-                  </div> <!-- end carousel -->
+                  <div class="col-md-7">
+                    <iframe src="http://8tracks.com/mixes/2910319/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                  </div>
+                  <div class="col-md-5">
+                    <h4>Feel Good<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a></h4>
+                    <p>underground hip hop and hipster rap.</p>
+                    <a class="rec-nav pull-right" href="#">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -287,7 +259,7 @@
                   <a class="rec-nav pull-right" href="#">next pick&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="../../img/artinstallations.jpg" />
+                  <img class="img-responsive" src="../../img/artinstallations.jpg" />
                 </div>
               </div>
             </div>
@@ -321,6 +293,11 @@ $(document).ready(function(){
     $('#explore-dropdown').show();
   }, function() {
     $('#explore-dropdown').hide();
+  });
+
+  // like button 
+  $('.like-icon').click(function() {
+    $(this).css('color', 'rgb(255, 106, 102)')
   });
   
   //window resizing

@@ -290,6 +290,7 @@ header #mood-change {
 .like-icon {
   color: rgb(130, 130, 130);
   font-size: 18px;
+  margin-top: 2px;
 }
 
 .like-icon:hover {
