@@ -10,7 +10,7 @@
   <link href="../../css/style.css" rel="stylesheet" media="screen">
   <link href="../../css/colors.css" rel="stylesheet" media="screen">
   
-	<link rel="shortcut icon" href="../../favicon.ico"/>
+  <link rel="shortcut icon" href="../../favicon.ico"/>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,7 +74,7 @@
                 <a class="color-change" href="../purple/results.html"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
                 <a class="color-change" href="../pink/results.html"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
                 <a class="color-change" href="../red/results.html"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
-                <a class="color-change" href="#"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
+                <a class="color-change" href="../orange/results.html"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
                 <a class="color-change" href="../yellow/results.html"><button type="button" id="mc-yellow" class="btn btn-default"></button></a> <br><br>
                 or <br><a href="../../../Spectrum" class="restart-btn"><button type="button" class="btn btn-default">start over</button></a>
               </div>
@@ -84,6 +84,8 @@
 
         <!-- Collapse -->
         <div class="panel-group" id="accordion">
+          <!-- Music -->
+          <div class="panel-group" id="accordion">
           <!-- Music -->
           <div class="panel panel-default">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseMusic">
@@ -157,7 +159,7 @@
               <div class="panel-body">
                 <div class="row">
                   <div class="col-md-6">
-                    <h4>Pho Basil<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a>s</h4>
+                    <h4>Pho Basil<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a></h4>
                     <p> <div class="restaurant-ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
                     <div class="restaurant-price"><i class="fa fa-dollar"></i><i class="fa fa-dollar"></i><i class="fa fa-dollar off"></i><i class="fa fa-dollar off"></i></div> </p>
                     <p>Category: Vietnamese, Thai</p>
@@ -259,7 +261,7 @@
                   <a class="rec-nav pull-right" href="#">next pick&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="../../img/artinstallations.jpg" />
+                  <img class="img-responsive" src="../../img/artinstallations.jpg" />
                 </div>
               </div>
             </div>
@@ -294,37 +296,12 @@ $(document).ready(function(){
   }, function() {
     $('#explore-dropdown').hide();
   });
-  
-  //window resizing
-  $(window).resize(function() {
-  	var width = $(window).width();
-  	if (width > 400) {
-		  $('.activity-btn .btn, .color-btn .btn').removeClass('btn-block');
-      $('.activity-btn .btn, .color-btn .btn').addClass('btn-default');
-	  }    
-  	if (width < 400) {
-  		$('.activity-btn .btn').removeClass('btn-default');
-      $('.activity-btn .btn').addClass('btn-block');
-      $('.activity-btn .btn').css({'margin-left':'0px'});
-  	}
-    if (width > 768) {
-      $('.color-btn .btn').css({'height':'280px'});
-    }
-    if (width < 768) {
-      $('.color-btn .btn').css({'height':'80px'});
-    }
+
+  // like button 
+  $('.like-icon').click(function() {
+    $(this).css('color', 'rgb(255, 106, 102)')
   });
-  $(document).ready(function(){
-  	var width = $(window).width();
-  	if (width < 400) {
-  		$('.activity-btn .btn').removeClass('btn-default');
-      $('.activity-btn .btn').addClass('btn-block');
-      $('.activity-btn .btn').css({'margin-left':'0px'});
-  	}
-    if (width < 768) {
-      $('.color-btn .btn').css({'height':'80px'});
-    }
-  });
+
 });
 </script>
 

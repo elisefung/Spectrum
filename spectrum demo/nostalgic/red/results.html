@@ -92,7 +92,7 @@
                   <!-- <h3 class="panel-title">Music</h3> -->
                   <i class="fa fa-headphones fa-3x"></i>
                 </div>
-                <div class="col-xs-11"><p class="panel-name">Upbeat Indie Pop</p>
+                <div class="col-xs-11"><p class="panel-name">Disney Soundtracks</p>
                   <p class="panel-descrip">some happy tunes to pick you up while you study</p>
                 </div>
               </div>
@@ -101,11 +101,11 @@
               <div class="panel-body">
                 <div class="row">
                   <div class="col-md-7">
-                    <iframe src="http://8tracks.com/mixes/2787126/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
+                    <iframe src="http://8tracks.com/mixes/2931067/player_v3_universal" width="480" height="200" style="border: 0px none;"></iframe>
                   </div>
                   <div class="col-md-5">
-                    <h4>Quick Indie Pick-me-up<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a></h4>
-                    <p>includes artists like Capital Cities, Empire of the Sun, and The Leisure Society.</p>
+                    <h4>happy endings<a href="#"><i class="fa fa-heart like-icon pull-right"></i></a></h4>
+                    <p>all the best Disney love songs</p>
                     <a class="rec-nav pull-right" href="#">next playlist&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -305,6 +305,11 @@ $(document).ready(function(){
     $('#explore-dropdown').show();
   }, function() {
     $('#explore-dropdown').hide();
+  });
+
+  // like button 
+  $('.like-icon').click(function() {
+    $(this).css('color', 'rgb(255, 106, 102)')
   });
   
   //window resizing

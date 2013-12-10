@@ -73,7 +73,7 @@
                 <a class="color-change" href="../darkblue/results.html"><button type="button" id="mc-darkblue" class="btn btn-default"></button></a>
                 <a class="color-change" href="../purple/results.html"><button type="button" id="mc-purple" class="btn btn-default"></button></a>
                 <a class="color-change" href="../pink/results.html"><button type="button" id="mc-pink" class="btn btn-default"></button></a>
-                <a class="color-change" href="#"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
+                <a class="color-change" href="../red/results.html"><button type="button" data-color="red" id="mc-red" class="btn btn-default"></button></a>
                 <a class="color-change" href="../orange/results.html"><button type="button" data-color="orange" id="mc-orange" class="btn btn-default"></button></a>
                 <a class="color-change" href="../yellow/results.html"><button type="button" id="mc-yellow" class="btn btn-default"></button></a> <br><br>
                 or <br><a href="../../../Spectrum" class="restart-btn"><button type="button" class="btn btn-default">start over</button></a>
@@ -271,7 +271,7 @@
                   <a class="rec-nav pull-right" href="#">next pick&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="../../img/read_bunnies.jpg" />
+                  <img class="img-responsive" src="../../img/read_bunnies.jpg" />
                 </div>
               </div>
             </div>
@@ -305,6 +305,11 @@ $(document).ready(function(){
     $('#explore-dropdown').show();
   }, function() {
     $('#explore-dropdown').hide();
+  });
+
+  // like button 
+  $('.like-icon').click(function() {
+    $(this).css('color', 'rgb(255, 106, 102)')
   });
   
   //window resizing
